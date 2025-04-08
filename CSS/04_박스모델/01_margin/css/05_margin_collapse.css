@@ -1,0 +1,22 @@
+.container {
+    position: relative;
+    width: 1200px;
+    height: auto;           /* ha */
+    border: 5px dashed orange;
+    margin: 100px auto;     /* m100-au */
+    text-align: center;     /* tac */
+}
+
+section {
+    margin: 100px auto;
+    width: 900px;
+    height: 200px;
+    /* bd3-solid-gray */
+    border: 3px solid gray;
+}
+
+
+.solve-1 { padding: 50px 0;}
+.solve-2 { border: 1px solid hotping; }
+.solve-3 { margin-top: 0; margin-bottom: 200px;}
+.solve-3:first-of-type { margin-top: 200px; }
