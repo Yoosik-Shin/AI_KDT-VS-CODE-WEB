@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>위치 속성 예시</title>
+  <style>
+    /* 기본 스타일 설정 */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    /* 위치 속성 예시 */
+    .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+    }
+
+    .box {
+      position: absolute;
+      top: 50%;       /* 상단에서 20px 위치 */
+      right: 50%;     /* 우측에서 20px 위치 */
+      transform: translate(50%, -50%);
+      /* top 50% leff 50% translate -50%, -50% 가 공식이지만
+        right 50% 일때 translate(50%, -50%)를 주는 등
+        비율 조절 해주면 가운데 맞춤 가능*/
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      z-index: 10;     /* 쌓임 순서, 값이 클수록 위에 표시됨 */
+    }
+
+    .box2 {
+      position: absolute;
+      top: 50%;       /* 상단에서 20px 위치 */
+      left: 50%;     /* 우측에서 20px 위치 */
+      transform: translate(-50%, -50%);
+      /* top 50% leff 50% translate -50%, -50% 가 공식이지만
+        right 50% 일때 translate(50%, -50%)를 주는 등
+        비율 조절 해주면 가운데 맞춤 가능*/
+      width: 100px;
+      height: 100px;
+      background-color: rgb(42, 99, 173);
+      z-index: 9;     /* 쌓임 순서, 값이 클수록 위에 표시됨 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box2"></div>
+  </div>
+</body>
+</html>

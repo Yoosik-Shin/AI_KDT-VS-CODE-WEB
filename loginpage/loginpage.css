@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to left, #af68d8 0%, #cd486b79 45%, #fbae508a 80%, #fccc63 95%);
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+
+    animation-name: logo;
+    animation-duration: 2s;
+}
+.logo img {
+    position:absolute;
+}
+.logo img :nth-child(2) { z-index: 1; opacity: 0;}
+
+
+
+
+@keyframes image {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes image {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+.backboard {
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 380px;
+    height: 640px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0.9;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.425);
+}
+
+.container {
+    width: 330px;
+    height: 600px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: gray; */
+}
+
+.id {
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color: rgba(128, 128, 128, 0.384);
+}
+
+.pw {
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-bottom: 20px;
+    border-color: rgba(128, 128, 128, 0.384);
+}
+
+.chkwrap {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 1px;
+}
+
+#saveid {
+    margin-left: 5px;
+}
+
+.saveid {
+    margin-left: 5px;
+}
+
+#autologin {
+    margin-left: 15px;
+}
+
+.autologin {
+    margin-left: 5px;
+}
+
+.loginbtn {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border: 0;
+    left: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 7px 7px 7px 7px;
+    font-size: 19px;
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.582);
+}
+
+
+
+.signinbtn {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border: 0;
+    left: 20px;
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 7px 7px 7px 7px;
+    font-size: 19px;
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.582);
+}
+
+.copy {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 13px;
+}
