@@ -1,0 +1,97 @@
+* {box-sizing: border-box;}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.btn {
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+    transition: all 1s;
+}
+
+/* Large 버튼 */
+.btn.lg {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.success { background-color: rgb(80, 221, 80); }
+.success:hover { background-color: rgba(80, 221, 80, 0.568); box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+.success:active { box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4); }
+
+.info { background-color: rgb(35, 98, 216); }
+.info:hover { background-color: rgba(35, 98, 216, 0.568); box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+.info:active { box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4); }
+
+.warning { background-color: rgb(248, 178, 28); }
+.warning:hover { background-color: rgba(248, 178, 28, 0.568); box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+.warning:active { box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4); }
+
+.danger { background-color: rgb(247, 80, 58); }
+.danger:hover { background-color: rgba(247, 80, 58, 0.568); box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+.danger:active { box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4); }
+
+.default { background-color: rgb(229, 230, 231); color: black;}
+.default:hover { background-color: rgba(229, 230, 231, 0.568); box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); }
+.default:active { box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4); }
+
+
+/* 테두리 버튼 */
+.btn.outline.success {
+    background-color: transparent;
+    border: 2px solid rgb(80, 221, 80);
+    color: rgb(80, 221, 80);
+}
+.btn.outline.success:hover {
+    background-color: rgba(80, 221, 80, 0.568);
+    color: white;
+}
+
+.btn.outline.info {
+    background-color: transparent;
+    border: 2px solid rgb(35, 98, 216);
+    color: rgb(35, 98, 216);
+}
+.btn.outline.info:hover {
+    background-color: rgba(35, 98, 216, 0.568);
+    color: white;
+}
+
+.btn.outline.warning {
+    background-color: transparent;
+    border: 2px solid rgb(248, 178, 28);
+    color: rgb(248, 178, 28);
+}
+.btn.outline.warning:hover {
+    background-color: rgba(248, 178, 28, 0.568);
+    color: white;
+}
+
+.btn.outline.danger {
+    background-color: transparent;
+    border: 2px solid rgb(247, 80, 58);
+    color: rgb(247, 80, 58);
+}
+.btn.outline.danger:hover {
+    background-color: rgba(247, 80, 58, 0.568);
+    color: white;
+}
+
+.btn.outline.default {
+    background-color: transparent;
+    border: 2px solid rgb(175, 175, 175);
+    color: rgb(175, 175, 175);
+}
+.btn.outline.default:hover {
+    background-color: rgba(229, 230, 231, 0.568);
+    color: black;
+}
