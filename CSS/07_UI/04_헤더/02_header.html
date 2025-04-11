@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>헤더2</title>
+    <link rel="stylesheet" href="css/02_header.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- 마우스 커서 효과 -->
+    <div class="cursor"></div>
+    
+    <header>
+        <!-- 로고 -->
+         <div class="logo">
+            <a href=""><img src="https://placehold.co/132x25" alt=""></a>
+         </div>
+         <!-- 메뉴 -->
+         <nav id="nav">
+            <ul class="gnb">
+                <li><span class="up"><a href="">Company</a></span></li>
+                <li><span class="up"><a href="">Service</a></span></li>
+                <li><span class="up"><a href="">Works</a></span></li>
+                <li><span class="up"><a href="">Blog</a></span></li>
+            </ul>
+         </nav>
+         <!-- 유틸 -->
+         <!-- .util>(.langs+.sns+.sitemap) -->
+         <div class="util">
+            <div class="langs">
+                <a href="" class="active">KR</a>
+                <a href="">EN</a>
+            </div>
+            <div class="line"></div>
+            <div class="sns">
+                <a href=""><img src="img/naver.svg" alt="naver"></a>
+                <a href=""><img src="img/insta.svg" alt="insta"></a>
+            </div>
+            <div class="line"></div>
+            <div class="sitemap">
+                <a href=""><span class="material-icons">menu</span></a>
+            </div>
+         </div>
+    </header>
+
+    <!-- 자바스크립트 작성 영역 -->
+     <script>
+        // shape
+        const shape = document.querySelector('.cursor')
+        // // html 로딩시 이벤트
+        // document.addEventListener("DOMContentLoaded", (e) => {
+        //     const x = e.clientX     // 마우스 x 좌표
+        //     const y = e.clientY     // 마우스 y 좌표
+        //     shape.style.transform 
+        //     = 
+        //     `
+        //     translate(${x}px, ${y}px)
+        //     translate(-50%, -50%)
+        //     `
+        // })
+        // 현재 마우스 포인터 위치
+        document.addEventListener("mousemove", (e) => {
+            shape.style.display = 'block'
+            const x = e.clientX     // 마우스 x 좌표
+            const y = e.clientY     // 마우스 y 좌표
+            shape.style.transform 
+            = 
+            `
+            translate(${x}px, ${y}px)
+            translate(-50%, -50%)
+            `
+        })
+     </script>
+</body>
+</html>
