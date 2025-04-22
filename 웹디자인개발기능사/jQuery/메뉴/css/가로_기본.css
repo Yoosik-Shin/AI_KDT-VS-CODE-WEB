@@ -1,0 +1,46 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  border: 3px dashed orange;
+}
+
+ul {list-style-type: none; padding: 0;}
+a {text-decoration: none; color: black;}
+
+.main-menu {
+  display: flex;
+}
+
+.menu-item {
+  width: 120px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid black;
+  background-color: white;
+  position: relative;
+}
+.menu-item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.menu-item:hover {  /* 이렇게하면 메인메뉴랑 서브메뉴랑 동시에 hover효과 들어감 */
+  background-color: cornflowerblue;
+}
+.menu-item:hover > a {  /* 위의 hover는 div에 들어가는거라 글씨색안바뀜 그래서 여기 따로지정 해야함 */
+  color: white;
+}
+.submenu .menu-item:hover { /* 메인메뉴와 서브메뉴 색상다르게 */
+  background-color: royalblue;
+}
+
+.submenu {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+}
