@@ -1,0 +1,34 @@
+#slides {
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slide-container {
+  position: relative;
+  display: flex;
+}
+.slide-container .slide {
+  width: 1200px;
+  height: 600px;
+}
+.slide-container .slide img{
+  width: 1200px;
+  height: 100%;
+}
+
+/* 원래 것 */
+/* .container {
+  width: 1200px;
+}
+
+.slide {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  transition: transform 1s ease;
+} */

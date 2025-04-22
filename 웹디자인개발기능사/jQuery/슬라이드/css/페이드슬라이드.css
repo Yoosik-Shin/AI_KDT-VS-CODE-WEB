@@ -1,0 +1,56 @@
+#slides {
+  width: 1200px;
+  height: 600px;
+  /* overflow: hidden; */
+}
+
+.slide-container {
+  position: relative;
+  display: flex;
+}
+.slide-container .slide {
+  position: absolute;     /* 상위요소의 relative요소를 따라서 포지션이 잡힘.앱솔루트 쓰려면 상위요소의 relative필수 */
+  width: 1200px;
+  height: 600px;
+}
+.slide-container .slide img{
+  width: 1200px;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .container {
+  width: 1200px;
+}
+
+.slide {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.slide img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 3s ease;
+  opacity: 0;
+}
+
+.slide img:first-of-type {opacity: 1;} */
+
+
+

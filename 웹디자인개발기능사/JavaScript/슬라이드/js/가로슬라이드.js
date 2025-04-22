@@ -14,12 +14,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
       = `translateX(calc(${size}px * -${index}))`
       // -1200 -2400 -3600 ...
     }
-
-    
   }
-
   setInterval(slide, 1500)
-
 })
 
 
